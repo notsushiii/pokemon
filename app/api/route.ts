@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 
-
 const fetchAllPokemons = async (url: string = "https://pokeapi.co/api/v2/pokemon") => {
   const response = await fetch(url);
   const data: PokemonApiResponse = await response.json();
@@ -15,8 +14,8 @@ const fetchAllPokemons = async (url: string = "https://pokeapi.co/api/v2/pokemon
   return allPokemon;
 }
 
-
 export async function GET() {
-    const allPokemon = await fetchAllPokemons();
-    return NextResponse.json(allPokemon);
+  const allPokemon = await fetchAllPokemons();
+  
+  return NextResponse.json(allPokemon);
 }

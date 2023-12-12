@@ -49,9 +49,6 @@ export default function SearchPokemons({ getSearchResults }: { getSearchResults:
                 <span className="sr-only">Search</span>
             </button>
         </form>
-
-
-
     )
 }
 
